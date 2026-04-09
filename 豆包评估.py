@@ -196,6 +196,10 @@ class Scorer:
               keypoint_result: Dict[str, Any],
               context: Optional[List[Dict[str, Any]]] = None) -> Dict[str, Any]:
         """评分"""
+        # 获取具体考点列表
+        kp_1_list = keypoint_result.get("key_point_1", [])
+        kp_0_list = keypoint_result.get("key_point_0", [])
+        
         # 渲染用户提示词
         up_tpl = Template(self.up_template)
         up_content = up_tpl.render({
@@ -203,7 +207,10 @@ class Scorer:
             "thinking": keypoint_result.get("thinking", ""),
             "analysis": keypoint_result.get("analysis", ""),
             "main_demand": keypoint_result.get("main_demand", ""),
-            "key_point": keypoint_result.get("key_point", []),
+            "key_point_1": kp_1_list if isinstance(kp_1_list, list) else [str(kp_1_list)],
+            "key_point_0": kp_0_list if isinstance(kp_0_list, list) else [str(kp_0_list)],
+            "key_point_1_text": "\n".join([f"{i+1}. {k}" for i, k in enumerate(kp_1_list)]) if isinstance(kp_1_list, list) else str(kp_1_list),
+            "key_point_0_text": "\n".join([f"{i+1}. {k}" for i, k in enumerate(kp_0_list)]) if isinstance(kp_0_list, list) else str(kp_0_list),
             "answer": answer,
             "context": self._format_context(context) if context else ""
         })

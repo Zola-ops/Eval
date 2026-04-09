@@ -50,6 +50,8 @@ progress.json
 *.pyc
 
 # 敏感配置
-*评估配置.json
+评估配置.json
 *config.json
 *.bak
+
+# 注意：豆包评估配置.json 已加入版本控制，如需私密配置请创建 评估配置.json
