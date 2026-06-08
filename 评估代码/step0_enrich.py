@@ -30,8 +30,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from config import INPUT_FILE, TASK_NAME, setup_logger, get_step0_data_path
 
 # ========== Bing MCP 配置 ==========
-BING_MCP_URL = "https://mcp.api-inference.modelscope.net/06b7560649284b/mcp"
-BING_MCP_TOKEN = "ms-6a8b46f0-6cad-4b28-bd75-80cbdc79666e"
+BING_MCP_URL = "YOUR_MCP_URL"
+BING_MCP_TOKEN = "YOUR_MCP_TOKEN"
 
 # ========== 查询分类提示词 ==========
 CLASSIFY_PROMPT = """你是一位查询分析专家。判断以下用户查询是否需要外部信息才能准确评估。

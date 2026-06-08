@@ -1,7 +1,7 @@
 # 模型配置：DeepSeek-V4-Flash
 MODEL = {
     "name": "DeepSeek-V4-Flash",
-    "base_url": "https://oneapi-comate.baidu-int.com/v1",
-    "api_key": "sk-PZ5zG8stB8Sl3a708888F97a985342A8A5108cBd0a1a886b",
+    "base_url": "YOUR_API_BASE_URL",
+    "api_key": "YOUR_API_KEY",
     "model": "DeepSeek-V4-Flash",
 }

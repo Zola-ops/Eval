@@ -26,35 +26,35 @@ from datetime import datetime as _datetime
 
 # ========== 生成模型（Step 1 — 各自独立生成考点） ==========
 GENERATION_MODELS = [
-    {"name": "DeepSeek-V4-Flash", "base_url": "https://oneapi-comate.baidu-int.com/v1",
-     "api_key": "sk-PZ5zG8stB8Sl3a708888F97a985342A8A5108cBd0a1a886b", "model": "DeepSeek-V4-Flash"},
-    {"name": "Kimi-K2.5", "base_url": "https://oneapi-comate.baidu-int.com/v1",
-     "api_key": "sk-PZ5zG8stB8Sl3a708888F97a985342A8A5108cBd0a1a886b", "model": "Kimi-K2.5"},
-    {"name": "MiniMax-M2.7", "base_url": "https://oneapi-comate.baidu-int.com/v1",
-     "api_key": "sk-PZ5zG8stB8Sl3a708888F97a985342A8A5108cBd0a1a886b", "model": "MiniMax-M2.7"},
+    {"name": "DeepSeek-V4-Flash", "base_url": "YOUR_API_BASE_URL",
+     "api_key": "YOUR_API_KEY", "model": "DeepSeek-V4-Flash"},
+    {"name": "Kimi-K2.5", "base_url": "YOUR_API_BASE_URL",
+     "api_key": "YOUR_API_KEY", "model": "Kimi-K2.5"},
+    {"name": "MiniMax-M2.7", "base_url": "YOUR_API_BASE_URL",
+     "api_key": "YOUR_API_KEY", "model": "MiniMax-M2.7"},
 ]
 
 # ========== 总结模型（Step 2 — 合成最终考点） ==========
 SUMMARY_MODEL = {
     "name": "DeepSeek-V4-Flash",
-    "base_url": "https://oneapi-comate.baidu-int.com/v1",
-    "api_key": "sk-PZ5zG8stB8Sl3a708888F97a985342A8A5108cBd0a1a886b",
+    "base_url": "YOUR_API_BASE_URL",
+    "api_key": "YOUR_API_KEY",
     "model": "DeepSeek-V4-Flash",
 }
 
 # ========== 评分模型（Step 3 — 考点逐条判定） ==========
 SCORE_MODEL = {
     "name": "DeepSeek-V4-Flash",
-    "base_url": "https://oneapi-comate.baidu-int.com/v1",
-    "api_key": "sk-PZ5zG8stB8Sl3a708888F97a985342A8A5108cBd0a1a886b",
+    "base_url": "YOUR_API_BASE_URL",
+    "api_key": "YOUR_API_KEY",
     "model": "DeepSeek-V4-Flash",
 }
 
 # ========== 分类模型（Step 4 — 问题类型标记） ==========
 CLASSIFY_MODEL = {
     "name": "DeepSeek-V4-Flash",
-    "base_url": "https://oneapi-comate.baidu-int.com/v1",
-    "api_key": "sk-PZ5zG8stB8Sl3a708888F97a985342A8A5108cBd0a1a886b",
+    "base_url": "YOUR_API_BASE_URL",
+    "api_key": "YOUR_API_KEY",
     "model": "DeepSeek-V4-Flash",
 }
 
